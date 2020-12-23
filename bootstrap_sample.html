@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">sticky-topを適用したナビゲーションバー</a>
+</nav>
+    <h1 class="text-center text-primary">Hello, world!</h1>
+    <div class="my-4">上下にサイズ4(1.5rem)のマージンを設定します</div>
+    <div class="pl-3">左にサイズ3(1rem)のパディングを設定します</div>
+    <div class="mt-2 p-3">
+      上にサイズ2(0.5rem)のマージンを設定し、上下左右にサイズ3(1rem)のパディングを設定します
+    </div>
+    <div class="container border p-3">
+      <p class="text-center">中央寄せのインライン要素</p>
+      <p class="text-left">左寄せのインライン要素</p>
+      <p class="text-right">右寄せのインライン要素</p>
+    </div>
+    <div class="container border p-3 my-3">
+      <div class="mx-auto bg-primary text-white" style="width: 200px">
+        中央寄せのブロック要素
+      </div>
+    </div>
+    <div class="container border clearfix p-3 my-3">
+      <div class="float-left bg-primary text-white" style="width: 200px">
+        左寄せのブロック要素
+      </div>
+    </div>
+    <div class="container border clearfix p-3 my-3">
+      <div class="float-right bg-primary text-white" style="width: 200px">
+        右寄せのブロック要素
+      </div>
+    </div>
+    <div class="container">
+      左右中央揃えのflexbox
+      <div class="d-flex justify-content-center border mb-3">
+        <div class="p-2 bg-primary text-white">flexアイテム 1</div>
+        <div class="p-2 bg-secondary text-white">flexアイテム 2</div>
+        <div class="p-2 bg-success text-white">flexアイテム 3</div>
+      </div>
+      左寄せのflexbox
+      <div class="d-flex justify-content-start border mb-3">
+        <div class="p-2 bg-primary text-white">flexアイテム 1</div>
+        <div class="p-2 bg-secondary text-white">flexアイテム 2</div>
+        <div class="p-2 bg-success text-white">flexアイテム 3</div>
+      </div>
+      右寄せのflexbox
+      <div class="d-flex justify-content-end border mb-3">
+        <div class="p-2 bg-primary text-white">flexアイテム 1</div>
+        <div class="p-2 bg-secondary text-white">flexアイテム 2</div>
+        <div class="p-2 bg-success text-white">flexアイテム 3</div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+
+    <button type="button" class="btn btn-link">Link</button>
+    <a class="btn btn-primary" href="#" role="button">リンク</a>
+    <button class="btn btn-primary" type="submit">ボタン</button>
+    <input class="btn btn-primary" type="button" value="インプット" />
+    <input class="btn btn-primary" type="submit" value="送信" />
+    <input class="btn btn-primary" type="reset" value="リセット" />
+
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-light">Light</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+    <button type="button" class="btn btn-primary btn-sm">小サイズ</button>
+    <button type="button" class="btn btn-primary disable">標準サイズ</button>
+    <button type="button" class="btn btn-primary btn-lg">大サイズ</button>
+    <button type="button" class="btn btn-primary btn-lg" disabled>無効</button>
+    <form>
+      <div class="form-group">
+        <label for="email">インプットのサンプル</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="name@example.com"
+        />
+      </div>
+      <div class="form-group">
+        <label for="comment">テキストエリアのサンプル</label>
+        <textarea class="form-control" id="comment" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="region">セレクトボックスのサンプル</label>
+        <select class="form-control" id="region">
+          <option>アジア</option>
+          <option>アフリカ</option>
+          <option>オセアニア</option>
+          <option>ヨーロッパ</option>
+          <option>中近東</option>
+          <option>北米</option>
+          <option>中南米</option>
+        </select>
+      </div>
+    </form>
+    <form>
+      <div class="form-group">
+        <label class="control-label">チェックボックスのサンプル</label>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="check1" checked />
+          <label class="form-check-label" for="check1">チェック1</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="check2" />
+          <label class="form-check-label" for="check2">チェック2</label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="check3"
+            disabled
+          />
+          <label class="form-check-label" for="check3"
+            >チェック3（無効状態）</label
+          >
+        </div>
+      </div>
+    </form>
+    <form>
+      <div class="form-group">
+        <label class="control-label">ラジオボタンのサンプル</label>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="exampleRadios"
+            id="ラジオボタン1"
+            checked
+          />
+          <label class="form-check-label" for="radio1">ラジオボタン1</label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="exampleRadios"
+            id="ラジオボタン2"
+          />
+          <label class="form-check-label" for="radio2">ラジオボタン2</label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="exampleRadios"
+            id="ラジオボタン3"
+            disabled
+          />
+          <label class="form-check-label" for="radio3"
+            >ラジオボタン3（無効状態）</label
+          >
+        </div>
+      </div>
+    </form>
+    <form>
+      <div class="form-group">
+        <label for="email">バリデーションチェック前の状態</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          value="name@example.com"
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">入力内容が有効な場合</label>
+        <input
+          type="email"
+          class="form-control is-valid"
+          id="email"
+          value="valid@example.com"
+        />
+        <div class="valid-feedback">使用できます!</div>
+      </div>
+      <div class="form-group">
+        <label for="email">入力内容が無効な場合</label>
+        <input
+          type="email"
+          class="form-control is-invalid"
+          id="email"
+          value="invalid@example.com"
+        />
+        <div class="invalid-feedback">
+          すでに使用されているメールアドレスです!
+        </div>
+      </div>
+    </form>
+    <form>
+      <div class="form-row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="名字" />
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="名前" />
+        </div>
+      </div>
+    </form>
+    <form>
+      <div class="form-group">
+        <label class="control-label">カスタムチェックボックスのサンプル</label>
+        <div class="custom-control custom-checkbox">
+          <input
+            class="custom-control-input"
+            type="checkbox"
+            id="custom-check1"
+            checked
+          />
+          <label class="custom-control-label" for="custom-check1"
+            >チェック1</label
+          >
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input
+            class="custom-control-input"
+            type="checkbox"
+            id="custom-check2"
+          />
+          <label class="custom-control-label" for="custom-check2"
+            >チェック2</label
+          >
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input
+            class="custom-control-input"
+            type="checkbox"
+            id="custom-check3"
+            disabled
+          />
+          <label class="custom-control-label" for="custom-check3"
+            >チェック3（無効状態）</label
+          >
+        </div>
+      </div>
+    </form>
+    <form>
+      <div class="form-group">
+        <label class="control-label">カスタムラジオボタンのサンプル</label>
+        <div class="custom-control custom-radio">
+          <input
+            type="radio"
+            id="customRadio1"
+            name="customRadio"
+            class="custom-control-input"
+            checked
+          />
+          <label class="custom-control-label" for="customRadio1"
+            >ラジオボタン1</label
+          >
+        </div>
+        <div class="custom-control custom-radio">
+          <input
+            type="radio"
+            id="customRadio1"
+            name="customRadio"
+            class="custom-control-input"
+          />
+          <label class="custom-control-label" for="customRadio1"
+            >ラジオボタン2</label
+          >
+        </div>
+        <div class="custom-control custom-radio">
+          <input
+            type="radio"
+            id="customRadio1"
+            name="customRadio"
+            class="custom-control-input"
+            disabled
+          />
+          <label class="custom-control-label" for="customRadio1"
+            >ラジオボタン3（無効状態）</label
+          >
+        </div>
+      </div>
+    </form>
+    <form>
+      <div class="form-group">
+        <label class="control-label">カスタムスイッチのサンプル</label>
+        <div class="custom-control custom-switch">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="customSwitch1"
+            checked
+          />
+          <label class="custom-control-label" for="customSwitch1"
+            >スイッチ1</label
+          >
+        </div>
+        <div class="custom-control custom-switch">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="customSwitch2"
+          />
+          <label class="custom-control-label" for="customSwitch2"
+            >スイッチ2</label
+          >
+        </div>
+        <div class="custom-control custom-switch">
+          <input
+            type="checkbox"
+            class="custom-control-input"
+            id="customSwitch3"
+            disabled
+          />
+          <label class="custom-control-label" for="customSwitch3"
+            >スイッチ3（無効状態）</label
+          >
+        </div>
+      </div>
+    </form>
+    <div class="form-group">
+    <label for="region">カスタムセレクトボックスのサンプル</label>
+    <select class="custom-select" id="region">
+      <option>アジア</option>
+      <option>アフリカ</option>
+      <option>オセアニア</option>
+      <option>ヨーロッパ</option>
+      <option>中近東</option>
+      <option>北米</option>
+      <option>中南米</option>
+    </select>
+    <label>label</label>                                    //  ラベル  （input-groupの外側）
+<div class="input-group">
+  <div class="input-group-prepend">                        // 左側にアドオンを配置する場合
+    <span class="input-group-text">左側のアドオン</span>
+  </div>
+  <input type="text" class="form-control">              //  テキストなどのフォーム入力要素
+  <div class="input-group-append">                      // 右側にアドオンを配置する場合
+    <span class="input-group-text">右側のアドオン</span>
+  </div>
+  <!--アドオンを左側に配置-->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">@</span>
+  </div>
+  <input type="text" class="form-control" placeholder="ハンドルネーム" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<!--アドオンを右側に配置-->
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="メールユーザーネーム" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <span class="input-group-text" id="basic-addon2">@example.com</span>
+  </div>
+</div>
+
+<!--ラベルを表示-->
+<label for="basic-url">バニティURL</label>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+  </div>
+  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+</div>
+
+<!--ラベルを左右両側に表示-->
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text">第</span>
+  </div>
+  <input type="text" class="form-control" aria-label="回数">
+  <div class="input-group-append">
+    <span class="input-group-text">回</span>
+  </div>
+</div>
+
+<!--テキストエリアにアドオンを表示-->
+<div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text">テキストエリア</span>
+  </div>
+  <textarea class="form-control" aria-label="With textarea"></textarea>
+</div>
+<div class="table-responsive">
+<table  class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">名字</th>
+        <th scope="col">名前</th>
+        <th scope="col">ニックネーム</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>赤木</td>
+        <td>剛憲</td>
+        <td>ゴリ</td>
+        <td>赤木</td>
+        <td>剛憲</td>
+        <td>ゴリ</td>
+        <td>赤木</td>
+        <td>剛憲</td>
+        <td>ゴリ</td>
+        <td>赤木</td>
+        <td>剛憲</td>
+        <td>ゴリ</td>
+        <td>赤木</td>
+        <td>剛憲</td>
+        <td>ゴリ</td>
+        <td>赤木</td>
+        <td>剛憲</td>
+        <td>ゴリ</td>
+        <td>赤木</td>
+
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>宮城</td>
+        <td>リョータ</td>
+        <td>リョーちん</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>三井</td>
+        <td>寿</td>
+        <td>ミッチー</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="d-md-block d-none bg-primary">
+  <h1 class="text-center">Medium〜Extra large</h1>
+  <h1 class="text-center">の場合に表示</h1>
+</div>
+<div class="d-lg-none d-block bg-secondary">
+  <h1 class="text-center">Extra small~Medium</h1>
+  <h1 class="text-center">の場合に表示</h1>
+</div>
+<div class="d-lg-none d-none d-md-block bg-success">
+  <h1 class="text-center">Medium</h1>
+  <h1 class="text-center">の場合に表示</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col bg-primary border border-white">
+      <p class="text-white">等幅のカラム</p>
+    </div>
+    <div class="col bg-primary border border-white">
+      <p class="text-white">等幅のカラム</p>
+    </div>
+    <div class="col bg-primary border border-white">
+      <p class="text-white">等幅のカラム</p>
+    </div>
+  </div>
+  <div class="row py-2">
+    <div class="col-4 bg-success border border-white">
+      <p class="text-white">4グリッド幅のカラム</p>
+    </div>
+    <div class="col-5 bg-success border border-white">
+      <p class="text-white">5グリッド幅のカラム</p>
+    </div>
+    <div class="col-3 bg-success border border-white">
+      <p class="text-white">3グリッド幅のカラム</p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-6 bg-primary border border-white">
+      <h2 class="text-white py-4">コンテンツ１</h2>
+    </div>
+    <div class="col-lg-3 col-md-6 bg-success border border-white">
+      <h2 class="text-white py-4">コンテンツ2</h2>
+      </div>
+    <div class="col-lg-3 col-md-6 bg-primary border border-white">
+      <h2 class="text-white py-4">コンテンツ3</h2>
+      </div>
+    <div class="col-lg-3 col-md-6 bg-success border border-white">
+      <h2 class="text-white py-4">コンテンツ4</h2>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample">
+      リンクタグの場合
+    </a>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      ボタンタグの場合
+    </button>
+  </p>
+
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+    <p>コラプスによって、表示・非表示を制御するコンテンツをここに記載します。</p>
+    <p>対象のコンテンツはテキストだけでなく、画像ファイルも指定可能です。</p>
+    <img class="img-thumbnail" src="https://getbootstrap.jp/docs/4.4/assets/img/bootstrap-stack.png" width="200px" alt="">
+    </div>
+  </div>
+</div>
+<div class="row justify-content-center">
+  <div class="dropdown m-4">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      ドロップダウンボタン
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">メニュー１</a>
+      <a class="dropdown-item" href="#">メニュー２</a>
+      <a class="dropdown-item" href="#">メニュー３</a>
+    </div>
+  </div>
+
+  <div class="dropdown m-4">
+    <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      ドロップダウンリンク
+    </a>
+
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <h6 class="dropdown-header">Rails講座</h6>
+      <a class="dropdown-item" href="#">動画教材</a>
+      <a class="dropdown-item" href="#">テキスト教材</a>
+      <a class="dropdown-item" href="#">ライブコーディング</a>
+      <div class="dropdown-divider"></div>
+      <h6 class="dropdown-header">PHP講座</h6>
+      <a class="dropdown-item" href="#">動画教材</a>
+      <a class="dropdown-item" href="#">テキスト教材</a>
+    </div>
+  </div>
+<!-- モーダル起動ボタン -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  モーダル起動ボタン
+</button>
+
+<!-- モーダルウィンドウ -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">モーダルタイトル</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ここにモーダルコンテンツを配置します。
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+        <button type="button" class="btn btn-primary">変更を保存</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 小サイズのモーダル -->
+<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">小サイズのモーダル</button>
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      省略
+    </div>
+  </div>
+</div>
+
+<!-- 標準サイズのモーダル -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-default">標準サイズのモーダル</button>
+
+<div class="modal fade bd-example-modal-default" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      省略
+    </div>
+  </div>
+</div>
+
+<!-- 大サイズのモーダル -->
+<button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">大サイズのモーダル</button>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      省略
+    </div>
+  </div>
+</div>
+
+<!-- 極大サイズのモーダル -->
+<button type="button" class="btn btn-lg btn-primary" data-toggle="modal" data-target=".bd-example-modal-xl">極大サイズのモーダル</button>
+
+<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      省略
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-expand">
+  <a class="navbar-brand" href="#">ブランド</a>
+  <div class="navbar-nav">
+    <a class="nav-item nav-link" href="#">メニュー１</a>
+    <a class="nav-item nav-link" href="#">メニュー２</a>
+    <a class="nav-item nav-link" href="#">メニュー３</a>
+  </div>
+</nav>
+<nav class="navbar navbar-expand bg-primary navbar-light">
+  <a class="navbar-brand" href="#">ブランド</a>
+  <div class="navbar-nav">
+    <a class="nav-item nav-link" href="#">メニュー１</a>
+    <a class="nav-item nav-link" href="#">メニュー２</a>
+    <a class="nav-item nav-link" href="#">メニュー３</a>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-md bg-primary navbar-dark">
+  <a class="navbar-brand" href="#">ブランド</a>
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#">メニュー１</a>
+      <a class="nav-item nav-link" href="#">メニュー２</a>
+      <a class="nav-item nav-link" href="#">メニュー３</a>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-md bg-primary navbar-dark">
+  <a class="navbar-brand" href="#">ブランド</a>
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#">メニュー１</a>
+      <a class="nav-item nav-link" href="#">メニュー２</a>
+      <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">ドロップダウンメニュー</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">サブメニュー１</a>
+          <a class="dropdown-item" href="#">サブメニュー２</a>
+          <a class="dropdown-item" href="#">サブメニュー３</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-md bg-primary navbar-dark">
+  <a class="navbar-brand" href="#">ブランド</a>
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#">メニュー１</a>
+      <a class="nav-item nav-link" href="#">メニュー２</a>
+      <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">ドロップダウンメニュー</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">サブメニュー１</a>
+          <a class="dropdown-item" href="#">サブメニュー２</a>
+          <a class="dropdown-item" href="#">サブメニュー３</a>
+        </div>
+      </div>
+    </div>
+    <form action="" class="form-inline">
+      <input type="search" class="form-control mr-sm-2" placeholder="検索">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">検索</button>
+    </form>
+  </div>
+</nav>
+<div class="container">
+  <p>16:9のアスペクト比</p>
+  <div class="embed-responsive embed-responsive-1by1">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Outcx4StSyU"></iframe>
+  </div>
+</div>
+
+</div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
